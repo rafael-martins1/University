@@ -166,7 +166,7 @@ public class Main {
             }
         }
 
-        // apresentação dos resultados no formato pedido
+        // apresentação dos resultados no formato pedido.
         for (int k = 0; k < test_c * 2; k = k + 2) {
             System.out.println(output.get(k) + " " + output.get(k + 1));
         }
