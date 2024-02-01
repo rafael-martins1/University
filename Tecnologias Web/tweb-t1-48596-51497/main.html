@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacinar Alentejo</title>
+    <link rel="icon" type="x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="doc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+
+    <script>
+        inicio();
+    </script>
+
+    <div class="container">
+        <a href="main.html"> <img src="logo.png" alt="logo" class="logo"></a>
+        <div class="cabeçalho">
+            <div class="cabeçalho-right">
+                <a class="active" href="">ÍNICIO</a>
+                <a href="gerir_agendamentos.html">GERIR AGENDAMENTOS</a>
+                <a href="acesso_reservado.html">ACESSO RESERVADO</a>
+                <a href="about.html">PERGUNTAS</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="container1">
+        <h2 id="tituloFarm">FARMÁCIAS DISPONÍVEIS</h2>
+        <div id="search_bar">
+            <input type="text" id="search_name" onkeyup="searchFarm(this.id)" placeholder="Procura por nomes..." title="Type in a name">
+            <input type="text" id="search_locality" onkeyup="searchFarm(this.id)" placeholder="Procura por localidades..." title="Type in a locality">
+            <p id="failed_search" style="display: none;"><br><strong>Nenhuma farmácia encontrada...</strong></p>
+        </div>
+        
+        <div id="farmacias-lista">
+
+        </div>
+
+        <div id="paginacao">
+
+        </div>
+        <form id="myForm1" onsubmit="addAgendamento()" style="display:none">
+
+
+            <br><label for="user">User ID:</label>
+            <input required type="text" id="user" placeholder="ID do user"><br>
+
+            <label for="data_agendamento">Data:</label>
+            <input required type="date" id="data_agendamento"><br><br>
+
+            <label class="gripe_class" for="gripe">Gripe</label>
+            <input type="radio" id="gripe" name="vacinas" value="gripe"><br>
+            <label class="covid_class" for="covid">Covid</label>
+            <input type="radio" id="covid" name="vacinas" value="covid-19"><br><br>
+
+            <input type="submit" value="Submit">
+            <p id="sucesso" style="display: none;text-align: center;;"><br><strong>Agendamento realizado com sucesso!</strong></p>
+            <p id="failed" style="display: none;text-align: center;;"><br><strong>Agendamento falhou!</strong></p>
+        </form>
+
+    </div>
+
+    <footer>
+        <div class="contact-info ">
+            <h3>Entre em Contacto Connosco</h3>
+            <p>Email:
+                <a href="mailto:geral@farmaciasportuguesas.pt">geral@farmaciasportuguesas.pt</a>
+            </p>
+            <p>Telefone: 210 159 159</p>
+        </div>
+
+        <div class="credits ">
+            <h3>Créditos da Aplicação</h3>
+            <p>Desenvolvido por: <a href="# ">João Sousa</a>, <a href="https://github.com/rafael-martins1 " target="_blank ">Rafael Martins</a></p>
+        </div>
+
+        <div class="external-link ">
+            <p>Visite <a href="https://www.farmaciasportuguesas.pt/ " target="_blank ">Farmácias Portuguesas</a></p>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>

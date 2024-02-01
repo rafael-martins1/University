@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacinar Alentejo</title>
+    <link rel="icon" type="x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="doc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="container">
+        <a href="main.html"> <img src="logo.png" alt="logo" class="logo"></a>
+        <div class="cabeçalho">
+            <div class="cabeçalho-right">
+                <a href="main.html">ÍNICIO</a>
+                <a href="gerir_agendamentos.html">GERIR AGENDAMENTOS</a>
+                <a class="active" href="acesso_reservado.html">ACESSO RESERVADO</a>
+                <a href="about.html">PERGUNTAS</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="botoes">
+        <button onclick="listar('https://magno.di.uevora.pt/tweb/t1/program/covid19/list') ">Listar Farmácias COVID</button>
+        <button onclick="listar('https://magno.di.uevora.pt/tweb/t1/program/gripe/list') ">Listar farmácias GRIPE</button>
+        <button onclick="mostrarFormAdicionar()">Adicionar farmácia</button>
+        <button onclick="mostrarFormRemover()">Remover farmácia</button>
+    </div>
+
+
+    <div id="farmFormRemove">
+        <h2 id="h2FormRemove" style="display:none">Remova uma Farmácia</h2>
+
+        <form id="myFormRemove" style="display:none;" onsubmit="submeterFormRemover()">
+
+            <label style="font-weight:bold" for="idFarmaciaRemove">ID:</label>
+            <input required type="number" id="idFarmaciaRemove" placeholder="ID da Farmácia">
+
+            <input id="botaoSubmtRemove" type="submit" value="Remover">
+        </form>
+    </div>
+
+
+
+
+    <div id="farmForm">
+        <h2 id="h2Form" style="display:none">Adicione a Farmácia</h2>
+
+        <form id="myForm" style="display: none;" onsubmit="submeterFormAdicionar()">
+
+            <label style="font-weight:bold" for="nomeFarm">Nome:</label>
+            <input required type="text" id="nomeFarm" placeholder="Nome da Farmácia">
+
+            <label style="font-weight:bold" for="localFarm">Localidade:</label>
+            <input type="text" id="localFarm" required placeholder="Região da Farmácia">
+
+            <label style="font-weight:bold" for="idFarmacia">ID:</label>
+            <input required type="number" id="idFarmacia" placeholder="ID da Farmácia">
+
+            <p id="vacinas-form">Vacinas:</p>
+            <label style="font-style:italic" for="covid-19">Covid</label>
+            <input class="vacina1Checkbox" type="checkbox" id="covid-19" name="vacinas" value="covid-19">
+
+            <label style="font-style:italic" for="gripe">Gripe</label>
+            <input class="vacina2Checkbox" type="checkbox" id="gripe" name="vacinas" value="gripe">
+
+            <input id="botaoSubmt" type="submit" value="Adicionar">
+        </form>
+    </div>
+
+    <div id="lista-farmacias">
+        <h3 id="farmacia-titulo"></h3>
+        <div id="farmacias-lista-vacinas"></div>
+    </div>
+
+    <div class="chart-container">
+        <canvas style="display:none;" id="myChart"></canvas>
+    </div>
+
+    <footer>
+        <div class="contact-info ">
+            <h3>Entre em Contacto Connosco</h3>
+            <p>Email:
+                <a href="mailto:geral@farmaciasportuguesas.pt">geral@farmaciasportuguesas.pt</a>
+            </p>
+            <p>Telefone: 210 159 159</p>
+        </div>
+
+        <div class="credits ">
+            <h3>Créditos da Aplicação</h3>
+            <p>Desenvolvido por: <a href="# ">João Sousa</a>, <a href="https://github.com/rafael-martins1 " target="_blank ">Rafael Martins</a></p>
+        </div>
+
+        <div class="external-link ">
+            <p>Visite <a href="https://www.farmaciasportuguesas.pt/ " target="_blank ">Farmácias Portuguesas</a></p>
+        </div>
+    </footer>
+
+
+</body>
+
+
+</html>

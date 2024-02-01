@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacinar Alentejo</title>
+    <link rel="icon" type="x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="doc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+
+    <script>
+        inicio();
+    </script>
+    
+    <div class="container">
+        <a href="main.html"> <img src="logo.png" alt="logo" class="logo"></a>
+        <div class="cabeçalho">
+            <div class="cabeçalho-right">
+                <a href="main.html">ÍNICIO</a>
+                <a class="active" href="">GERIR AGENDAMENTOS</a>
+                <a href="acesso_reservado.html">ACESSO RESERVADO</a>
+                <a href="about.html">PERGUNTAS</a>
+
+            </div>
+        </div>
+    </div>
+
+    <form id="myForm2" onsubmit="listarAgendamentos()">
+
+        <p>Para gerir agendamentos, por favor preencha o seu ID de utilizador</p>
+        <br><label for="user_agendamentos">User ID:</label>
+        <input required type="number" id="user_agendamentos" placeholder="ID do user">
+
+        <input type="submit" value="Procurar">
+
+    </form>
+
+    <div id="lista-agendamentos">
+
+    </div>
+    <div id="farmacias-lista" style="display:none;">
+
+    </div>
+
+    <div id="paginacao" style="display:none;">
+
+    </div>
+
+    <footer>
+        <div class="contact-info ">
+            <h3>Entre em Contacto Connosco</h3>
+            <p>Email:
+                <a href="mailto:geral@farmaciasportuguesas.pt">geral@farmaciasportuguesas.pt</a>
+            </p>
+            <p>Telefone: 210 159 159</p>
+        </div>
+
+        <div class="credits ">
+            <h3>Créditos da Aplicação</h3>
+            <p>Desenvolvido por: <a href="# ">João Sousa</a>, <a href="https://github.com/rafael-martins1 " target="_blank ">Rafael Martins</a></p>
+        </div>
+
+        <div class="external-link ">
+            <p>Visite <a href="https://www.farmaciasportuguesas.pt/ " target="_blank ">Farmácias Portuguesas</a></p>
+        </div>
+    </footer>
+
+</body>
+
+
+
+</html>
