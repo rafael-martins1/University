@@ -1,0 +1,449 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300;400&display=swap');
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	min-height: 100vh;
+	position: relative;
+}
+
+header {
+	padding: 10px 0;
+	text-align: center;
+	border-bottom-style: double;
+	margin-bottom: 20px;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 800px;
+	font-family: 'Roboto Mono', monospace;
+	margin: 0 auto;
+}
+
+nav a {
+	color:black;
+	text-decoration: none;
+	margin: 0 2px;
+	transition: font-size 0.4s ease;
+}
+
+.logout {
+    display: inline;
+    margin: 0;
+}
+
+img {
+	max-width: 200px;
+	margin-bottom: 30px;
+}
+
+footer {
+	background-color: rgb(42, 41, 41);
+	text-align: center;
+	position: relative;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 30px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top:20px;
+}
+
+footer section {
+	margin: 100px; /* Espaçamento entre as sections */
+	color:white;
+}
+
+footer section p a{
+	text-decoration: none;
+	color:rgb(99,99,101);
+}
+
+nav a:hover{
+	font-weight:900;
+	font-size:17px;
+}
+
+
+.acessoRForm {
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 90%;
+	margin: 40px auto 0 auto;
+}
+
+.loginRegister {
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 16px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+input[type="submit"] {
+	background-color: #2d2f2d;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 16px;
+}
+
+.pagamento{
+	text-align: center;
+
+}
+
+.role_input label{
+	display: inline;
+}
+
+.role_input input{
+	width: auto;
+	margin-bottom: 0;
+}
+
+select{
+	margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+	background-color: #000000;
+}
+
+.infoPagamento {
+	display: flex;
+	justify-content: center;
+}
+.paymentButton {
+	display: inline-block;
+	margin-right: 10px;
+	width: auto;
+}
+
+.paymentButton:last-child {
+	margin-right: 0;
+}
+
+.error{
+	margin-top:10px;
+	color:red;
+	text-align: center;
+}
+
+.successMessage{
+	margin-top:10px;
+	margin-bottom: 15px;
+	color:green;
+	text-align: center;
+}
+
+#login-box, #register-box {
+    text-align: center;
+}
+
+.event-block{
+	text-align: center;
+}
+
+.event {
+	border: 1px solid #ccc;
+	padding: 10px;
+	background-color: #c5c5c5;
+	display: inline-block;
+	width: 40%;
+	margin: auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.event:last-child {
+	margin-right: 0; /* Adicione esta regra */
+}
+
+#inscricoes{
+	text-align: center;
+	display: flex;
+	padding: 10px;
+	background-color: #c5c5c5;
+	width: 50%;
+	margin:auto;
+}
+
+#paginas {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#paginas a {
+	display: inline-block;
+	padding: 8px 16px;
+	text-decoration: none;
+	background-color: #2d2f2d;
+	color: white;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+
+#paginas a:hover {
+	background-color: #000000;
+}
+
+#paginas a:disabled {
+	background-color: #ddd;
+	color: #aaa;
+	pointer-events: none;
+}
+
+.pagination {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.pagination a {
+	display: inline-block;
+	padding: 8px 16px;
+	text-decoration: none;
+	background-color: #2d2f2d;
+	color: white;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+
+.pagination a:hover {
+	background-color: #000000;
+}
+
+.pagination a:disabled {
+	background-color: #ddd;
+	color: #aaa;
+	pointer-events: none;
+}
+
+.titles{
+	text-align: center;
+}
+
+
+.participants table {
+	background-color: #000000;
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	border-style: double;
+}
+
+/* Estilos para as células de cabeçalho e dados */
+.participants th, .participants td {
+	padding: 12px;
+	text-align: left;
+}
+
+/* Estilos para a linha de cabeçalho */
+.participants thead {
+	background-color: #000000;
+	color: white;
+}
+
+/* Estilos para as células do corpo da tabela */
+.participants tbody th, .participants tbody td {
+	background-color: #c5c3c3;
+}
+
+.vermaissit {
+	width: auto;
+}
+
+#listaPesq {
+	display: flex;
+	flex-direction: row;
+	align-items: center; /* Centraliza verticalmente */
+	justify-content: center; /* Centraliza horizontalmente */
+	flex-wrap: wrap;
+	width: 100%;
+	text-align: center;
+}
+
+.evento{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #ccc;
+	padding: 10px;
+	background-color: #c5c5c5;
+	width: 30%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	align-items: center;
+}
+
+#show{
+	display: none;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+#botao{
+	background-color: #2d2f2d;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 16px;
+}
+
+#botao:hover{
+	background-color: #000000;
+}
+@media (max-width: 1280px) {
+	footer section {
+		margin: 0px 30px 0px 80px;
+	}
+}
+
+@media (max-width: 990px) {
+	footer {
+		font-size: 0.8em;
+	}
+
+	footer section {
+		margin: 0px 30px 0px 30px;
+	}
+
+	.event-block {
+		font-size: 0.9em;
+	}
+
+	#inscricoes {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		font-size: 0.8em;
+		background-size: auto;
+	}
+}
+
+@media (max-width: 840px) {
+	.event-block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.event {
+		width: 60%;
+		margin: 10px 0;
+	}
+
+	nav {
+		font-size: 0.9em;
+		max-width: 75%;
+	}
+
+	.participants {
+		display: flex;
+		flex-direction: column;
+		font-size: 0.8em;
+	}
+
+	.participants th, td {
+		padding: 8px;
+	}
+}
+
+@media (max-width: 660px) {
+	.event {
+		width: 50%;
+		margin: 10px 0px;
+	}
+
+	.event-block {
+		font-size: 0.8em;
+	}
+
+	.evento {
+		width: 60%;
+	}
+
+	.titles {
+		font-size: small;
+	}
+
+	footer {
+		font-size: 0.7em;
+	}
+
+	footer section {
+		margin: 0px 15px 0px 15px;
+	}
+
+	nav {
+		font-size: 0.8em;
+	}
+
+	.participants {
+		font-size: 0.7em;
+	}
+
+	.loginRegister {
+		font-size: 0.8em;
+	}
+
+	#login-box p, #register-box p {
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 570px) {
+
+	footer {
+		display: block;
+		height: auto;
+	}
+
+	footer section {
+		margin: 35px 0px 35px 0px;
+	}
+
+	.acessoRForm {
+		width: auto;
+	}
+
+	.participants {
+		font-size: 0.6em;
+	}
+
+	.participants th, td {
+		padding: 5px;
+	}
+}
