@@ -115,4 +115,4 @@ nao_figura(N,K) :- \+ figura(N,K).
 
 cam(X,Y) :- a(X,Y,Z).
 cam(X,Y,Z) :- a(X,Y), nao_figura(Y,Z).
-cam(X,Y,Z) :- a(X,W), nao_figura(W,Z), cam(W,Y,c(W,z)).
+cam(X,Y,Z) :- a(X,W), nao_figura(W,Z), cam(W,Y,c(W,Z)).
