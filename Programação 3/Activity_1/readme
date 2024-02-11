@@ -1,1 +1,54 @@
+Considere o programa da família:
 
+-------------------------------
+
+homem(joao).
+homem(rui).
+homem(manuel).
+homem(ricardo).
+
+mulher(maria).
+mulher(ana).
+mulher(rita).
+mulher(silvia).
+mulher(joana).
+progenitor(joao, maria).
+progenitor(joao, rui).
+progenitor(manuel, joao).
+progenitor(ricardo, manuel).
+progenitor(ana, rui).
+progenitor(joana, maria).
+progenitor(rita, joao).
+progenitor(rita, silvia).
+----------------------------------
+Desenvolva (a) predicados e (b) tabelas e queries SQL que permitam responder às seguintes perguntas:
+
+Quem é o pai duma pessoa qualquer?
+Quem é a mãe duma pessoa qualquer?
+Como definir irmão (genérico: entenda-se irmão ou irmã)?
+Como definir irmã?
+Quem são os avós da maria?
+Será que alguém é tio de alguém? quem?
+Será que alguém é primo (direito) de alguém? quem?
+Como dizer que alguém é antepassado de outra pessoa?
+Como dizer que alguém é descendente de outra pessoa?
+(*) Como dizer que duas pessoas são meias-irmãs?
+Como exprimir a relação de "primo em 2° grau"?
+Como ver se duas pessoas têm algum parentesco?
+(*) Como quantificar o grau de parentesco de duas pessoas? (sugestão: encontrar o número de arcos que é preciso atravessar para chegar de um ao outro)
+ 
+
+(recomenda-se que modifique a relação progenitor/2, assim como as auxiliares homem/1 e mulher/1 para descrever uma situação que conheça bem)
+
+Da mesma forma, faça o exercício das estradas, conforme as aulas teóricas, ie. com a relação:
+
+e(lisboa, santarem).
+e(santarem, coimbra).
+e(santarem, caldas).
+e(caldas, lisboa).
+e(coimbra, porto).
+e(lisboa, evora).
+e(evora, beja).
+e(lisboa, faro).
+e(beja, faro).
+aqui, implemente as relações a/2, cam/2 e auxiliares como discutido nas aulas teóricas.
